@@ -1,0 +1,49 @@
+package games;
+
+import java.util.Random;
+
+import security.GameClient;
+import lib.Player;
+
+public abstract class Game {
+	public static final String EXTRA_GAMENAME_WARHAND = "WarHand";
+	
+	protected Player[] _players;
+	protected int _numPlayers;
+	protected long[] _auth_codes;
+	protected String _gamename;
+
+	protected GameClient[] _clients;
+	
+	
+	public Game(Player[] players) {
+		_numPlayers = players.length;
+		
+		_players = new Player[_numPlayers];
+		_auth_codes = new long[_numPlayers];
+		_clients = new GameClient[_numPlayers];
+		Random rand_auth = new Random();
+		
+		for (int p=0; p<_numPlayers; p++) {
+			_players[p] = players[p];
+			_auth_codes[p] = rand_auth.nextLong();
+		}
+		
+		_gamename = "";
+	}
+	
+
+	public abstract Summary compete();
+
+
+	public int getPlayerID(Player p) {
+		for (int i=0; i<_numPlayers; i++) {
+			if (_players[i] == p) {
+				return i;
+			}
+		}
+		
+		return -1;
+	}
+
+}

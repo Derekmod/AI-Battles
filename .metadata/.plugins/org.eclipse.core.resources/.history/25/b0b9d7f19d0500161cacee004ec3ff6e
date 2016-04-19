@@ -1,0 +1,15 @@
+package lib;
+
+import security.GameClient;
+
+
+public class WarHandClient extends GameClient {
+	
+	
+	
+	
+	@Override
+	public String usage() {
+		return "WarHand";
+	}
+}

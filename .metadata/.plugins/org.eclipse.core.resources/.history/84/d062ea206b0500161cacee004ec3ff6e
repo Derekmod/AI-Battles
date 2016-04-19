@@ -1,0 +1,8 @@
+package security;
+
+public abstract class GameClient {
+	
+	
+	
+	
+}

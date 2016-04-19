@@ -1,0 +1,24 @@
+package msc;
+
+import java.util.Comparator;
+
+public class CardComparator implements Comparator<Card> {
+
+	private boolean _aceHigh = true;
+	
+	
+	public CardComparator() {
+		
+	}
+	public CardComparator(aceHigh) {
+		_aceHigh = aceHigh;
+	}
+	
+	
+	@Override
+	public int compare(Card arg0, Card arg1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

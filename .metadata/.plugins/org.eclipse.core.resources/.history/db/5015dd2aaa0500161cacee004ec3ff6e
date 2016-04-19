@@ -1,0 +1,15 @@
+package lib;
+
+import security.Move;
+
+public abstract class Player {
+	protected long _auth_code;
+	
+	public Player(long auth_code) {
+		_auth_code = auth_code;
+	}
+	
+	
+	public abstract Move getMove();
+
+}

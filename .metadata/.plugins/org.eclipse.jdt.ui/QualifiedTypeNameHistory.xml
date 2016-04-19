@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="msc.Deck"/>
+<fullyQualifiedTypeName name="security.GameClient"/>
+<fullyQualifiedTypeName name="lib.WarHandClient"/>
+<fullyQualifiedTypeName name="security.Move"/>
+<fullyQualifiedTypeName name="war_hand.CardComparator"/>
+<fullyQualifiedTypeName name="games.Game"/>
+<fullyQualifiedTypeName name="sub_sample.SamplePlayer"/>
+<fullyQualifiedTypeName name="lib.Player"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="games.Summary"/>
+<fullyQualifiedTypeName name="lib.WarHandSummary"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="lib.HumanPlayer"/>
+<fullyQualifiedTypeName name="games.WarHand"/>
+<fullyQualifiedTypeName name="msc.Card"/>
+<fullyQualifiedTypeName name="lib.WarHandMove"/>
+<fullyQualifiedTypeName name="sub_sample.GreedyPlayer"/>
+<fullyQualifiedTypeName name="sub_sample.AntiGreedyPlayer"/>
+<fullyQualifiedTypeName name="war_hand.WarHandHumanPlayer"/>
+<fullyQualifiedTypeName name="war_hand.WarHandPlayer"/>
+</qualifiedTypeNameHistroy>

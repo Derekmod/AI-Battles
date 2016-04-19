@@ -1,0 +1,22 @@
+package lib;
+
+import games.Game;
+import games.WarHand;
+import security.Move;
+
+public class HumanPlayer extends Player {
+
+	public HumanPlayer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Move getMove(Game g) {
+		g = (WarHand) g;
+		System.out.println("")
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

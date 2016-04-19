@@ -1,0 +1,9 @@
+package security;
+
+public abstract class GameClient {
+	
+	
+	
+	
+	abstract String usage();
+}

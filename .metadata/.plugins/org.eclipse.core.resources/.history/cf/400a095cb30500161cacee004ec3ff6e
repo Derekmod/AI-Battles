@@ -1,0 +1,40 @@
+package lib;
+
+import java.util.Scanner;
+
+import msc.Card;
+import games.Game;
+import games.WarHand;
+import security.Move;
+
+public class HumanPlayer extends Player {
+
+	public HumanPlayer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Move getMove(Game g_raw) {
+		WarHand g = (WarHand) g_raw;
+		
+		Card[] prev = g.getPrevPlay();
+		Card[] hand = g.getHand(this);
+		System.out.println("\n\n\n\n");
+		if (prev[0] != null) {
+			System.out.println("Previous play: [" + prev[0] + ", " + prev[1] + "]");
+		}
+		System.out.println("(Player ID: " + g.getPlayerID(this) + ")");
+		System.out.println();
+		System.out.print("Hand:");
+		for (Card c : hand) {
+			System.out.println("\t" + c);
+		}
+		Scanner inp = new Scanner(System.in);
+		int input = inp.nextInt();
+		inp.close();
+		// TODO Auto-generated method stub
+		return new WarHandMove(input);
+	}
+
+}

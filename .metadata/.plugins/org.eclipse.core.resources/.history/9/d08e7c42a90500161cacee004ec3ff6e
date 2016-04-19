@@ -1,0 +1,7 @@
+package games;
+
+public class Summary {
+	public Winner = null;
+
+	
+}

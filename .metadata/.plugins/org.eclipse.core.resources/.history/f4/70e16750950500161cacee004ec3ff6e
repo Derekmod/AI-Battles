@@ -1,0 +1,7 @@
+package games;
+
+public abstract class Game {
+	public static final String EXTRA_GAMENAME_WARHAND = "WarHand";
+
+	public abstract Summary compete(Player[] players);
+}

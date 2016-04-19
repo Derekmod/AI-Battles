@@ -1,0 +1,16 @@
+package security;
+
+import games.Game;
+import lib.Player;
+
+public abstract class GameClient {
+	private Player _player;
+	private Game _game;
+	
+
+	
+	public Player getPlayer() {return _player;}
+	
+	
+	public abstract String usage();
+}

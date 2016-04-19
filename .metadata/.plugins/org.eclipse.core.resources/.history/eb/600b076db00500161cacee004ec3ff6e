@@ -1,0 +1,122 @@
+package games;
+
+import java.util.ArrayList;
+
+import war_hand.CardComparator;
+import lib.Player;
+import lib.WarHandClient;
+import lib.WarHandMove;
+import msc.Card;
+import msc.Deck;
+
+public class WarHand extends Game {
+	public static final int HAND_SIZE = 5;
+	
+	private Deck _deck;
+	private ArrayList<ArrayList<Card>> _hands;
+	private ArrayList<Integer> _score;
+	private int _pot;
+	
+	private CardComparator _cardCmp;
+	
+	private WarHandSummary _record;
+	
+	
+	
+	public WarHand(Player[] players) {
+		super(players);
+		
+		init();
+		//deal();
+		// TODO Auto-generated constructor stub
+	}
+	
+	private void init() {
+		_deck = Deck.sortedDeck().shuffle(); //add interesting shuffling params here
+		_cardCmp = new CardComparator();
+		_record = new WarHandSummary();
+		
+		for (int p=0; p<_numPlayers; p++) {
+			_clients[p] = new WarHandClient(_players[p], this, _auth_codes[p]);
+		}
+		
+		_hands = new ArrayList<ArrayList<Card>>();
+		_score = new ArrayList<Integer>();
+		
+		for (int p=0; p<_numPlayers; p++) {
+			_hands.add(_deck.draw(HAND_SIZE));
+			_score.add(0);
+		}
+		
+		_pot = 0;
+	}
+
+	@Override
+	public Summary compete() {
+		
+		while (_hands.get(0).size() > 0) {
+			WarHandMove move0 = (WarHandMove) _players[0].getMove(this);
+			Card card0 = _hands.get(0).remove(move0._cardID);
+
+			WarHandMove move1 = (WarHandMove) _players[1].getMove(this);
+			Card card1 = _hands.get(1).remove(move1._cardID);
+			
+			ArrayList<Card> roundMove = new ArrayList<Card>();
+			roundMove.add(card0);
+			roundMove.add(card1);
+			_record._moves
+			
+			if (_cardCmp.compare(card0, card1) > 0) {
+				_score.set(0, _score.get(0) + 1 + _pot);
+				_pot = 0;
+			} else if (_cardCmp.compare(card0, card1) < 0) {
+				_score.set(1, _score.get(1) + 1 + _pot);
+				_pot = 0;
+			} else {
+				_pot ++;
+			}
+		}
+		
+		Player winner = null;
+		if (_score.get(0) > _score.get(1)) {
+			winner = _players[0];
+		} else if (_score.get(0) < _score.get(1)) {
+			winner = _players[1];
+		}
+		_record._winner = winner;
+		
+		// TODO Auto-generated method stub
+		return _record;
+	}
+	
+	
+	// non-proprietary access methods
+	public int getPot() {return _pot;}
+	public int[] getScore() {
+		int[] ans = new int[_numPlayers];
+		for (int i=0; i<_numPlayers; i++) {
+			ans[i] = _score.get(0);
+		}
+		
+		return ans;
+	}
+	
+	
+	// proprietary access methods
+	public Card[] getHand(Player player) {
+		Card[] ans;
+		for (int p=0; p<_numPlayers; p++) {
+			if (_players[p] == player) {
+				ans = new Card[_hands.get(p).size()];
+				for (int i=0; i < _hands.get(p).size(); i++) {
+					ans[i] = _hands.get(p).get(i);
+				}
+				return ans;
+			}
+		}
+		
+		return null;
+	}
+	
+
+}

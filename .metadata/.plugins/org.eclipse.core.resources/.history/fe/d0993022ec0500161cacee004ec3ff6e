@@ -1,0 +1,16 @@
+package security;
+
+import core.Game;
+import core.Player;
+
+public abstract class GameClient {
+	Player _player;
+	Game _game;
+	
+
+	
+	public Player getPlayer() {return _player;}
+	
+	
+	public abstract String usage();
+}

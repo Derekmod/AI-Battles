@@ -1,0 +1,9 @@
+package lib;
+
+import security.GameClient;
+
+
+public class WarHandClient extends GameClient {
+	
+	
+}

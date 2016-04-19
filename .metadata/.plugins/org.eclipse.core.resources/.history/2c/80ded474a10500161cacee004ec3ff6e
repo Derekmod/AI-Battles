@@ -1,0 +1,20 @@
+package sub_sample;
+
+import security.Move;
+import lib.Player;
+import lib.WarHandMove;
+
+public class SamplePlayer extends Player {
+
+	public SamplePlayer(long auth_code) {
+		super(auth_code);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Move getMove() {
+		// TODO Auto-generated method stub
+		return new WarHandMove(this._auth_code, 0);
+	}
+
+}

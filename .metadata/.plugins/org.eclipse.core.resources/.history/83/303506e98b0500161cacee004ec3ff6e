@@ -1,0 +1,38 @@
+package msc;
+
+import java.util.Comparator;
+
+public class CardComparator implements Comparator<Card> {
+	private static final int DOT_ID = 0;
+	private static final int SUIT_ID = 1;
+	
+	
+	private boolean _aceHigh = true;
+	
+	
+	public CardComparator() {
+		_aceHigh = true;
+	}
+	public CardComparator(boolean aceHigh) {
+		_aceHigh = aceHigh;
+	}
+	
+	
+	@Override
+	public int compare(Card c1, Card c2) {
+		boolean ace1=false, ace2=false;
+		if (c1.getDots() == 1) {
+			ace1 = true;
+		}
+		if (c2.getDots() == 1) {
+			ace2 = true;
+		}
+		
+		if (_aceHigh) {
+		if (ace1 && !ace2)
+		
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

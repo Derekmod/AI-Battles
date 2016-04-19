@@ -1,0 +1,17 @@
+package director;
+
+import msc.Card;
+import msc.Deck;
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		Deck d = Deck.sortedDeck().shuffle();
+		
+		for (Card c : d._cards) {
+			System.out.println(c);
+		}
+	}
+
+}

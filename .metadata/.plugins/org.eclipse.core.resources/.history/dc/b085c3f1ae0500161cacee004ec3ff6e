@@ -1,0 +1,15 @@
+package games;
+
+import java.util.ArrayList;
+
+import lib.Player;
+import msc.Card;
+
+public class Summary {
+	public Player _winner = null;
+	
+	public ArrayList<Card> p1moves;
+	public ArrayList<Card> p2moves;
+
+	
+}

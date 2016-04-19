@@ -1,0 +1,12 @@
+package director;
+
+import msc.Deck;
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		Deck d = Deck.sortedDeck().shuffle();
+	}
+
+}

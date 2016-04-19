@@ -1,0 +1,10 @@
+package security;
+
+public class Move {
+	public long _auth_code;
+	
+	public Move(long auth_code) {
+		_auth_code = auth_code;
+	}
+
+}

@@ -1,0 +1,19 @@
+package sub_sample;
+
+import security.Move;
+import lib.Player;
+
+public class SamplePlayer extends Player {
+
+	public SamplePlayer(long auth_code) {
+		super(auth_code);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Move getMove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,6 @@
+package security;
+
+public class Move {
+	public long _auth_code;
+
+}

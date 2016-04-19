@@ -1,0 +1,23 @@
+package director;
+
+import msc.Card;
+import msc.Deck;
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		Deck d = Deck.sortedDeck();
+		
+		for (int i=0; i<d._cards.size(); i++) {
+			System.out.println(d._cards.get(i));
+		}
+		
+		d.shuffle(0,0);
+		
+		for (int i=0; i<d._cards.size(); i++) {
+			System.out.println(d._cards.get(i));
+		}
+	}
+
+}

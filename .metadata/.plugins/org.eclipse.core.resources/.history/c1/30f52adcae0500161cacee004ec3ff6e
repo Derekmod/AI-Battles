@@ -1,0 +1,12 @@
+package games;
+
+import lib.Player;
+
+public class Summary {
+	public Player _winner = null;
+	
+	public ArrayList<Card> p1moves;
+	public ArrayList<Card> p2moves;
+
+	
+}

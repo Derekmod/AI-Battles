@@ -1,0 +1,9 @@
+package games;
+
+import lib.Player;
+
+public class Summary {
+	public Player _winner = null;
+
+	
+}

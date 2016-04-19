@@ -1,0 +1,19 @@
+package lib;
+
+import security.GameClient;
+
+
+public class WarHandClient extends GameClient {
+	
+	
+	
+	
+	public WarHandClient(Player player, WarHand g, long _auth_code) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String usage() {
+		return "WarHand";
+	}
+}

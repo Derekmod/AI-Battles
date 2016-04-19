@@ -1,0 +1,13 @@
+package lib;
+
+import security.Move;
+
+public final class WarHandMove extends Move {
+
+	public WarHandMove(long auth_code, int cardId) {
+		super(auth_code);
+	}
+	
+	
+
+}

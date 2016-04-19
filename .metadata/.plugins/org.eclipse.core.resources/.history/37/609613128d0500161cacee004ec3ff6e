@@ -1,0 +1,16 @@
+package war_hand;
+
+import msc.Card;
+import java.util.Comparator;
+
+public class CardComparator implements Comparator<Card>{
+	
+	public CardComparator() {
+		
+	}
+	
+	
+	
+	
+
+}

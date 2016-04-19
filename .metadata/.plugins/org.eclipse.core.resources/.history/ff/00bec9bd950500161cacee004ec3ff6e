@@ -1,0 +1,7 @@
+package sub_sample;
+
+import lib.Player;
+
+public class SamplePlayer extends Player {
+
+}

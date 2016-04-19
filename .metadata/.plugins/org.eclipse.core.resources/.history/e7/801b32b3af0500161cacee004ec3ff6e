@@ -1,0 +1,16 @@
+package lib;
+
+import java.util.ArrayList;
+
+import msc.Card;
+import games.Summary;
+
+public class WarHandSummary extends Summary {
+	
+	public ArrayList<ArrayList<Card>> _moves;
+	
+	public WarHandSummary() {
+		super();
+	}
+
+}

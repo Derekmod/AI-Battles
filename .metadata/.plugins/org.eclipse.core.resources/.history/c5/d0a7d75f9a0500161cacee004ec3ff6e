@@ -1,0 +1,19 @@
+package games;
+
+import lib.Player;
+
+public abstract class Game {
+	public static final String EXTRA_GAMENAME_WARHAND = "WarHand";
+	
+	protected Player[] _players;
+	protected long _auth_codes;
+	protected String GAME_NAME;
+	
+	
+	public Game(Player[] players) {
+		
+	}
+	
+
+	public abstract Summary compete(Player[] players);
+}

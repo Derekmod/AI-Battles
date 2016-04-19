@@ -1,0 +1,10 @@
+package lib;
+
+public class HumanPlayer extends Player {
+
+	public HumanPlayer(long auth_code) {
+		super(auth_code);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,28 @@
+package sub_sample;
+
+import games.Game;
+import security.Move;
+import war_hand.WarHand;
+import war_hand.WarHandMove;
+import lib.Player;
+import msc.Card;
+
+public class AntiGreedyPlayer extends Player {
+
+	@Override
+	public Move getMove(Game g_raw) {
+		WarHand g = (WarHand) g_raw;
+		Card[] hand = g.getHand(this);
+		int best = 0;
+		for (int i=1; i<hand.length; i++) {
+			if (g.getPot() == 0 && hand[i].getDots() < hand[best].getDots()) {
+				best = i;
+			} else if (g.getPot() != 0 && hand[i].getDots() > hand[best].getDots()) {
+				best = i;
+			}
+		}
+		// TODO Auto-generated method stub
+		return new WarHandMove(best);
+	}
+
+}

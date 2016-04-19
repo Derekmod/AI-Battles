@@ -1,0 +1,23 @@
+package director;
+
+import games.WarHand;
+import sub_sample.SamplePlayer;
+import lib.Player;
+import msc.Card;
+import msc.Deck;
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		Player p1 = new SamplePlayer();
+		Player p2 = new SamplePlayer();
+		Player[] players = {p1, p2};
+		WarHand g = new WarHand();
+		
+		for (int round=0; round < 100; round++) {
+			
+		}
+	}
+
+}

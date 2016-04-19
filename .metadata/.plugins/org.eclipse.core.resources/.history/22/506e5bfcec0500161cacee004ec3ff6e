@@ -1,0 +1,22 @@
+package sub_sample;
+
+import core.Game;
+import core.Move;
+import core.Player;
+import war_hand.WarHand;
+import war_hand.WarHandMove;
+
+public class SamplePlayer extends Player {
+
+	public SamplePlayer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Move getMove(Game g) {
+		// do calculations here
+		return new WarHandMove(0);
+	}
+
+}

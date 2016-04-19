@@ -1,0 +1,7 @@
+package lib;
+
+import security.Move;
+
+public final class WarHandMove extends Move {
+
+}

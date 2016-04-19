@@ -1,0 +1,18 @@
+package msc;
+
+public class Card {
+	public static final String[] SUIT_NAMES = {"Spades", "Hearts", "Diamonds", "Clubs"};
+	
+	private int mySuit;
+	private int myDots;
+	
+	public Card(int suit, int dots) {
+		mySuit = suit;
+		myDots = dots;
+	}
+	
+	public int getSuit() {return mySuit;}
+	public int getDots() {return myDots;}
+	public String getSuit() {return SUIT_NAMES[mySuit];}
+	
+}

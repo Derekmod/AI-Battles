@@ -1,0 +1,45 @@
+package director;
+
+import games.Summary;
+import games.WarHand;
+import sub_sample.AntiGreedyPlayer;
+import sub_sample.GreedyPlayer;
+import sub_sample.SamplePlayer;
+import lib.HumanPlayer;
+import lib.Player;
+import msc.Card;
+import msc.Deck;
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		Player p1 = new GreedyPlayer();
+		Player p2 = new SamplePlayer();
+		Player[] players = {p1, p2};
+		WarHand g;
+		
+		int wins1 = 0;
+		int wins2 = 0;
+		int total = 0;
+		
+		for (int round=0; round < 100000; round++) {
+			g = new WarHand(players);
+			Summary result = g.compete();
+			if (result._winner == p1) {
+				wins1 ++;
+			} else if (result._winner == p2) {
+				wins2 ++;
+			}
+			
+			total ++;
+		}
+		
+		System.out.println("p1 winrate: " + (double)wins1/(double)total);
+		System.out.println("p2 winrate: " + (double)wins2/(double)total);
+		System.out.println(wins1);
+		System.out.println(wins2);
+		System.out.println(total);
+	}
+
+}

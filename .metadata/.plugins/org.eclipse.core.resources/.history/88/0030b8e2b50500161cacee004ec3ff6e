@@ -1,0 +1,15 @@
+package sub_sample;
+
+import games.Game;
+import security.Move;
+import lib.Player;
+
+public class GreedyPlayer extends Player {
+
+	@Override
+	public Move getMove(Game g) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

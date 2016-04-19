@@ -1,0 +1,32 @@
+package msc;
+
+import java.util.ArrayList;
+
+public class Deck {
+	private ArrayList<Card> _cards;
+	
+	
+	public Deck(boolean empty) {
+		init();
+		if (!empty) {
+			
+		}
+	}
+	
+	
+	private void init() {
+		_cards = new ArrayList<Card>();
+	}
+	
+	public Deck sortedDeck() {
+		Deck ret = new Deck(true);
+		for (int suit=0; suit < 4; suit++) {
+			for (int dots=1; dots<=13; dots++) {
+				ret._cards.add(new Card(suit, dots));
+			}
+		}
+		
+		return ret;
+	}
+
+}

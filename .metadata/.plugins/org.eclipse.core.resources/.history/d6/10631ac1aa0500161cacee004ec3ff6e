@@ -1,0 +1,21 @@
+package sub_sample;
+
+import games.WarHand;
+import security.Move;
+import lib.Player;
+import lib.WarHandMove;
+
+public class SamplePlayer extends Player {
+
+	public SamplePlayer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Move getMove(WarHand g) {
+		// do calculations here
+		return new WarHandMove(this._auth_code, 0);
+	}
+
+}
