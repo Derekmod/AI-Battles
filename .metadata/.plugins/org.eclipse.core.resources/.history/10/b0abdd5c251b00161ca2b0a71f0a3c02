@@ -1,0 +1,8 @@
+package director;
+
+import java.util.ArrayList;
+
+public interface Tournament {
+
+	public ArrayList<Integer> compete(ArrayList<Player> contestants);
+}

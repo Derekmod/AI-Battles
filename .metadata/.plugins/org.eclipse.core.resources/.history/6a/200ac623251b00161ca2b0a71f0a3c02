@@ -1,0 +1,6 @@
+package director;
+
+public interface Tournament {
+
+	public ArrayList<Integer> compete(ArrayList<Player>() contestants);
+}

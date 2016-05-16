@@ -1,0 +1,25 @@
+package director;
+
+import java.util.ArrayList;
+
+import core.Game;
+import core.Player;
+
+public class RoundRobin implements Tournament {
+	private Class<? extends Game> _game_class;
+	
+	public RoundRobin(Class<? extends Game> cls) {
+		_game_class = cls;
+	}
+
+
+	@Override
+	public ArrayList<Integer> compete(ArrayList<Player> contestants) {
+		// TODO Auto-generated method stub
+		Game board = (Game) _game_class.getConstructors()[0].newInstance();
+		return null;
+	}
+	
+	
+
+}

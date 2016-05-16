@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 import msc.Card;
 
+/**
+ * A simple player to allow humans to play (against AIs or each other)
+ * @author Derek
+ *
+ */
 public class WarHandHumanPlayer extends WarHandPlayer {
 	private Scanner scan;
 

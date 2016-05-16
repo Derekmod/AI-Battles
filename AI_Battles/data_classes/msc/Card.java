@@ -2,6 +2,7 @@ package msc;
 
 public class Card {
 	public static final String[] SUIT_NAMES = {"Spades", "Hearts", "Diamonds", "Clubs"};
+	// _dots value of 1 specifies an ACE, 13 is a KING
 	
 	private int _suit;
 	private int _dots;

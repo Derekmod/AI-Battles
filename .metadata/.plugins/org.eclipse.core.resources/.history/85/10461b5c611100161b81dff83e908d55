@@ -1,0 +1,20 @@
+package core;
+
+import java.util.ArrayList;
+
+
+
+public class Record {
+	public Player _winner = null;
+	
+	protected ArrayList<Pair<Integer, Move>> _moveList; 
+	
+
+	
+	
+	public Record() {
+		_winner = null;
+	}
+
+	
+}

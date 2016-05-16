@@ -1,0 +1,12 @@
+package director;
+
+import java.util.ArrayList;
+
+import core.Game;
+import core.Player;
+
+public interface Tournament<T extends Game> {
+	Class<T> GameType;
+
+	public ArrayList<Integer> compete(ArrayList<Player> contestants);
+}

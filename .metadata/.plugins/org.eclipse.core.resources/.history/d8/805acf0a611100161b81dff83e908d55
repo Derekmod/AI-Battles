@@ -1,0 +1,12 @@
+package msc;
+
+public class Pair<S,T> {
+	public S first;
+	public T second;
+	
+	public Pair<S,T>(S first, T second) {
+		this.first = first;
+		this.second = second;
+	}
+
+}

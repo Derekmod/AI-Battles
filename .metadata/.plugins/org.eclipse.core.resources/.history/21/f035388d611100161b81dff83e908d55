@@ -1,0 +1,17 @@
+package war_hand;
+
+import java.util.ArrayList;
+
+import core.Record;
+import msc.Card;
+
+public class WarHandRecord extends Record {
+	
+	public ArrayList<ArrayList<Card>> _moves;
+	
+	public WarHandRecord() {
+		super();
+		_moves = new ArrayList<ArrayList<Card>>();
+	}
+
+}
