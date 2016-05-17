@@ -199,11 +199,7 @@ public class WarHand extends Game {
 		
 		return null;
 	}
-	/**
-	 * get my player number
-	 * @param player Player asking question
-	 * @return number (0 or 1) of player
-	 */
+	
 	public int getPNum(Player player) {
 		if (player == _players[0]) {
 			return 0;

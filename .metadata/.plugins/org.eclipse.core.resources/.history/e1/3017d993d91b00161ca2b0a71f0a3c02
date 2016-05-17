@@ -4,10 +4,6 @@ import msc.Card;
 import java.util.Comparator;
 
 /**
- * Many games compare cards, this class handles that.
- * Only Game objects will hold CardComparator objects.
- * 
- * With current implementation, treat it as an abstract class...
  * 
  * @author Derek
  *

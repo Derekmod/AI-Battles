@@ -1,14 +1,5 @@
 package msc;
 
-/**
- * Represents a standard card.
- * 
- * _dots goes from 1-13 inclusive, where 2 is a deuce,
- * 1 is an ace, and 13 is a king.
- * 
- * @author Derek
- *
- */
 public class Card {
 	public static final String[] SUIT_NAMES = {"Spades", "Hearts", "Diamonds", "Clubs"};
 	// _dots value of 1 specifies an ACE, 13 is a KING

@@ -3,13 +3,6 @@ package msc;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * Represents a deck of cards.
- * 
- * allows for biased shuffling, currently not symmetric.
- * @author Derek
- *
- */
 public class Deck {
 	protected ArrayList<Card> _cards;
 	

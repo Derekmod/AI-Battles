@@ -152,10 +152,6 @@ public class WarHand extends Game {
 	
 	
 	// non-proprietary access methods
-	/**
-	 * get number of tricks in pot.
-	 * @return number of tricks in pot
-	 */
 	public int getPot() {return _pot;}
 	public int[] getScore() {
 		int[] ans = new int[_numPlayers];
@@ -165,10 +161,6 @@ public class WarHand extends Game {
 		
 		return ans;
 	}
-	/**
-	 * get a list of what cards were played in the previous turn.
-	 * @return the two cards played.
-	 */
 	public Card[] getPrevPlay() {
 		Card[] prev = {null, null};
 		
@@ -198,18 +190,6 @@ public class WarHand extends Game {
 		}
 		
 		return null;
-	}
-	/**
-	 * get my player number
-	 * @param player Player asking question
-	 * @return number (0 or 1) of player
-	 */
-	public int getPNum(Player player) {
-		if (player == _players[0]) {
-			return 0;
-		} else {
-			return 1;
-		}
 	}
 	
 

@@ -9,7 +9,7 @@ import java.util.Random;
  * To create a new game for AI-Battles, extend this class at the
  * very least.
  * 
- * Must completely hide Players from each other.
+ * Should completely hide Players from each other.
  * 
  * @author Derek
  *

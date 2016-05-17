@@ -3,9 +3,8 @@ package core;
 
 /**
  * Class representing a player in any game.
- * Future updates potentially might require
+ * Future updates might perceivably require
  * an authorization code for some actions.
- * 
  * @author Derek
  *
  */

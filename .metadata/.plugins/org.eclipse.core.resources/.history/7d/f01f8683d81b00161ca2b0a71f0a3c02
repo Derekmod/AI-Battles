@@ -8,6 +8,7 @@ package msc;
  * 
  * @author Derek
  *
+ *	@TODO: implement comparator
  */
 public class Card {
 	public static final String[] SUIT_NAMES = {"Spades", "Hearts", "Diamonds", "Clubs"};
